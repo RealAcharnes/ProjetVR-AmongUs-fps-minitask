@@ -10,9 +10,6 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-VR project - Copie/Library/PackageCache
-VR project - Copie/Library/Artifacts
-
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
