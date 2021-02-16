@@ -71,7 +71,10 @@ public class BotMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(player);
-        isDead = true;
+        if ((collision.gameObject.tag == "45ACP Bullet") || (collision.gameObject.tag == "tracker"))
+        {
+            Destroy(this);
+            isDead = true;
+        }
     }
 }
