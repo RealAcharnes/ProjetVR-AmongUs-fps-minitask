@@ -21,8 +21,6 @@ public class BotMovement : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        Debug.Log(timer);
-        
         
         if (timer >= framerate)
         {
@@ -32,9 +30,6 @@ public class BotMovement : MonoBehaviour
             timer -= framerate;
         }
 
-        
-        
-        
         //transform.position += new Vector3(0, 0, orientation*movement);
         
     }
