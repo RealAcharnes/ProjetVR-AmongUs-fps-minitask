@@ -8298,6 +8298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e7f6fd42e215f4a97ca30d8acd0543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: 0
+  movementx: 0
+  movementz: 1
   framerate: 2
   player: {fileID: 7051807642800325787}
