@@ -40,7 +40,7 @@ Lorsque le joueur arrive devant la mini-tâche il pourra interagir avec les bout
 
 Le joueur peut faire disparaitre les ennemis soit en leurs tirant dessus avec le pistolet, soit en leurs donnant un coup de couteau. Les ennemis sont disposés sur toute la map avec une direction , une vitesse différente pour chacun. Ils réaparaissent après un certain temps.
 
-##### Decouverte
+###### Decouverte
 Ce projet a été une réelle découvert de la réalité virtuelle d'une part et d'Unity d'autre part. Effectivement nous avons découvert le logiciel et nous avons pu nous former et découvrir énormément de possiblitées possibles.
 
 #### N'hésitez pas à vous balader, à utiliser les objets mis à votre disposition et à découvrir où sont les ennemis sur la carte.
