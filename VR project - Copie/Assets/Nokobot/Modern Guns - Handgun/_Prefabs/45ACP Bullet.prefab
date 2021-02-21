@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4396417133449288}
   - component: {fileID: 1067929284349639088}
+  - component: {fileID: 4827632934847467495}
+  - component: {fileID: -4112668201074513790}
   m_Layer: 0
   m_Name: 45ACP Bullet
-  m_TagString: Untagged
+  m_TagString: 45ACP Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,6 +51,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!136 &4827632934847467495
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122964723992546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.007932675
+  m_Height: 0.03265933
+  m_Direction: 2
+  m_Center: {x: 0, y: -0.00024340725, z: 0.012357985}
+--- !u!114 &-4112668201074513790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122964723992546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c56a41e52ffd744bfea50fd0c8d8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3724705277012589230
 PrefabInstance:
   m_ObjectHideFlags: 0

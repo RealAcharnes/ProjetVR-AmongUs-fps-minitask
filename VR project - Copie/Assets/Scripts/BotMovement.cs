@@ -1,80 +1,31 @@
+using System.Collections;
 using UnityEngine;
 public class BotMovement : MonoBehaviour
 {
-    [SerializeField] private float movementx;
-    [SerializeField] private float movementz;
+    private float movementz = -2f;
+    [SerializeField] private float speed = 1f;
     private float timer;
-    private float orientation;
-    public float framerate;
-    private int compteur;
-    private Transform PlayerTransform;
+    [SerializeField] private float movementTime = 3f;
     [SerializeField] private GameObject player;
-    private Vector3 PlayerAngle;
-    private Vector3 PlayerMovement;
-    private float respawnTime;
-    private float respawnTimer;
-    private bool isDead;
+    private Transform PlayerTransform;
+    
+
     void Start()
     {
         timer = 0.0f;
-        respawnTimer = 0.0f;
-        respawnTime = 3.0f;
-        Vector3 playerPosition = transform.position;
-        PlayerAngle = transform.rotation.eulerAngles;
-        PlayerTransform = player.GetComponent<Transform>();
-        isDead = false;
-        orientation = -1;
-        if (movementx != 0)
-        {
-            PlayerAngle = new Vector3(PlayerAngle.x, PlayerAngle.y + 90, PlayerAngle.z);
-        }
+        PlayerTransform = player.transform;
+       
     }
     private void Update()
     {
+        
         timer += Time.deltaTime;
-        //Debug.Log(timer);
-        
-        
-        if (timer >= framerate)
-        {
-            if (movementx != 0)
-            {
-                PlayerAngle = new Vector3(PlayerAngle.x, PlayerAngle.y + 180, PlayerAngle.z);
-            }
+        PlayerTransform.position += PlayerTransform.forward * movementz * speed * Time.deltaTime;
 
-
-            if (movementz != 0)
-            {
-                PlayerAngle = new Vector3(PlayerAngle.x, PlayerAngle.y + 180, PlayerAngle.z);
-            }
-
-            PlayerTransform.rotation = Quaternion.Euler(PlayerAngle);
-            orientation = -orientation;
-            timer -= framerate;
+        if (timer >= movementTime){
+            PlayerTransform.Rotate(new Vector3(0f, 180f, 0f));
+            timer -= movementTime;
         }
-
-
-        transform.position += new Vector3(movementx * orientation * Time.deltaTime, 0f, movementz * orientation * Time.deltaTime);
-
-        if (isDead)
-            respawnTimer += Time.deltaTime;
         
-        if (respawnTimer >= respawnTime)
-        {
-            Instantiate(player);
-            isDead = false;
-            respawnTimer -= respawnTime;
-        }
-
-        transform.position += new Vector3(movementx * orientation * Time.deltaTime, 0f, movementz * orientation * Time.deltaTime);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if ((collision.gameObject.tag == "45ACP Bullet") || (collision.gameObject.tag == "tracker"))
-        {
-            Destroy(this);
-            isDead = true;
-        }
     }
 }
