@@ -26,7 +26,7 @@ Le pistolet est un objet attrapable mais aussi activable (pour tirer), pour tire
 
 Nous avons fait une mini-tache qui est celle de la lumière dans Among Us, pour ceux ne connaissant pas la carte ou le jeu voici où ce trouve cette mini-tache : 
 
-![among-us-carte-skeld](\among-us-carte-skeld.jpg)
+![among-us-carte-skeld](among-us-carte-skeld.jpg)
 
 Pour cela il faut se rendre dans la salle 'electrical', il y aura alors des boutons interactifs qui permettront au joueur de changer la lumière ambiante du jeu. 
 
