@@ -2,7 +2,7 @@
 
 Le build se trouve dans le dossier "Build".
 
-# Introduction
+###### Introduction
 
 Nous avons durant ces semaines de projet dû faire un jeu en réalité virtuelle sur Unity. Nous avons choisi le sujet d'Among us car c'est un jeu qui est très populaire actuellement. Dans ce projet nous avons essayer de faire vivre l'univers d'Among us dans un environnement de réalité virtuelle, en y ajoutant un coté FPS.
 
